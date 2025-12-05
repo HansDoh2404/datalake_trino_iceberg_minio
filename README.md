@@ -76,6 +76,7 @@ Les différents outils technologiques utilisés pour son implémentation sont le
 * [![Nessie][nessie]][nessie-url]
 * [![Minio][minio]][minio-url]
 * [![Airflow][airflow]][airflow-url]
+* [![Docker][docker]][docker-url]
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -235,6 +236,8 @@ Use this space to list resources you find helpful and would like to give credit 
 [minio-url]: https://docs.min.io/enterprise/aistor-object-store/
 [airflow]: https://img.shields.io/badge/airflow-%2300338F?style=for-the-badge&logo=apache-airflow&logoColor=white
 [airflow-url]: https://airflow.apache.org/docs/
+[docker]: https://img.shields.io/badge/docker-%231D63ED?style=for-the-badge&logo=docker&logoColor=white
+[docker-url]: https://docs.docker.com/
 
 <!-- [product-screenshot]: images/screenshot.png
 [Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
