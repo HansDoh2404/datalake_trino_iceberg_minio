@@ -26,7 +26,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/HansDoh2404/datalake_trino_iceberg_minio">
-    <img src="images/architecture.png" alt="Logo" width="80" height="80">
+    <img src="images/architecture.png" alt="Logo" width="800" height="800">
   </a>
 
   <h3 align="center">Best-README-Template</h3>
