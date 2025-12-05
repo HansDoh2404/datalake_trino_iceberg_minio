@@ -29,7 +29,7 @@
     <img src="images/architecture.png" alt="Logo" width="800" height="800">
   </a>
 
-  <h3 align="center">Best-README-Template</h3>
+  <h3 align="center">Datalake - trino iceberg minio</h3>
 </div>
 
 
