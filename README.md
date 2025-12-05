@@ -71,15 +71,12 @@
 
 Les différents outils technologiques utilisés pour son implémentation sont les suivants
 
-* [![python][python]][python-url]
-* [![Next][Next.js]][Next-url]
-* [![React][React.js]][React-url]
-* [![Vue][Vue.js]][Vue-url]
-* [![Angular][Angular.io]][Angular-url]
-* [![Svelte][Svelte.dev]][Svelte-url]
-* [![Laravel][Laravel.com]][Laravel-url]
-* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-* [![JQuery][JQuery.com]][JQuery-url]
+* [![Python][python]][python-url]
+* [![Trino][trino]][trino-url]
+* [![Nessie][nessie]][nessie-url]
+* [![Minio][minio]][minio-url]
+* [![Airflow][airflow]][airflow-url]
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -228,8 +225,17 @@ Use this space to list resources you find helpful and would like to give credit 
 [license-url]: https://www.linkedin.com/in/hans-ariel-doh-59a31a2ba/ -->
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/hans-ariel-doh-59a31a2ba/
-[python]: https://img.shields.io/badge/Python-blue?logo=python&logoColor=white
+[python]: https://img.shields.io/badge/Python-blue?style=for-the-badge&logo=python&logoColor=white
 [python-url]: https://docs.python.org/3/
+[nessie]: https://img.shields.io/badge/Nessie-green?style=for-the-badge&logo=nesie&logoColor=white
+[nessie-url]: https://docs.python.org/3/
+[trino]: https://img.shields.io/badge/trino-%23FF69B4?style=for-the-badge&logo=trino&logoColor=white
+[trino-url]: https://trino.io/docs/current/index.html
+[minio]: https://img.shields.io/badge/minio-red?style=for-the-badge&logo=minio&logoColor=white
+[minio-url]: https://docs.min.io/enterprise/aistor-object-store/
+[airflow]: https://img.shields.io/badge/airflow-%2300338F?style=for-the-badge&logo=apache-airflow&logoColor=white
+[airflow-url]: https://airflow.apache.org/docs/
+
 <!-- [product-screenshot]: images/screenshot.png
 [Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
 [Next-url]: https://nextjs.org/
