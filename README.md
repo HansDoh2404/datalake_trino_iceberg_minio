@@ -64,7 +64,7 @@
 <!-- ABOUT THE PROJECT -->
 ## A propos du projet
 
-**Le projet implémenté, est un datalake dont l'objectif est de centraliser et faciliter le traitement de données massives en suivant une approche ELT** pour une analyse future, notamment l'exploration du passé, l'identification de tendances, et le support de la conformité et de la planification stratégique. Son histoire est liée à la volonté de dépasser les limites des data warehouses en permettant de stocker des données sans schéma prédéfini.
+**Le projet implémenté, est un datalake dont l'objectif est de centraliser et faciliter le traitement de données massives en suivant une approche ELT** afin de produire des analyses futures, notamment l'exploration du passé, l'identification de tendances, et le support de la conformité et de la planification stratégique. L'histoire du datalake est liée à la volonté de dépasser les limites des data warehouses en permettant de stocker des données sans schéma prédéfini.
 
 
 ### Stack technologique
@@ -79,7 +79,7 @@ Les différents outils technologiques utilisés pour son implémentation sont le
 * [![Docker][docker]][docker-url]
 
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">haut de page</a>)</p>
 
 
 
