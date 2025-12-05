@@ -19,8 +19,6 @@
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
 [![LinkedIn][linkedin-shield]][linkedin-url]
-![Static Badge](https://img.shields.io/badge/Python-blue?logo=python&logoColor=white)
-
 
 
 <!-- PROJECT LOGO -->
@@ -73,6 +71,7 @@
 
 Les différents outils technologiques utilisés pour son implémentation sont les suivants
 
+* [![python][python]][python-url]
 * [![Next][Next.js]][Next-url]
 * [![React][React.js]][React-url]
 * [![Vue][Vue.js]][Vue-url]
@@ -229,6 +228,8 @@ Use this space to list resources you find helpful and would like to give credit 
 [license-url]: https://www.linkedin.com/in/hans-ariel-doh-59a31a2ba/ -->
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/hans-ariel-doh-59a31a2ba/
+[python]: https://img.shields.io/badge/Python-blue?logo=python&logoColor=white
+[python-url]: https://docs.python.org/3/
 <!-- [product-screenshot]: images/screenshot.png
 [Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
 [Next-url]: https://nextjs.org/
