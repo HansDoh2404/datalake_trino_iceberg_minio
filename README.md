@@ -79,9 +79,6 @@ Les différents outils technologiques utilisés pour son implémentation sont le
 * [![Docker][docker]][docker-url]
 
 
-<p align="right">(<a href="#readme-top">haut de page</a>)</p>
-
-
 
 <!-- GETTING STARTED -->
 ## Lancdement du projet
@@ -120,8 +117,6 @@ _Below is an example of how you can instruct your audience on installing and set
    git remote -v # confirm the changes
    ```
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 <!-- CONTACT -->
 ## Contact
@@ -147,8 +142,6 @@ Use this space to list resources you find helpful and would like to give credit 
 * [GitHub Pages](https://pages.github.com)
 * [Font Awesome](https://fontawesome.com)
 * [React Icons](https://react-icons.github.io/react-icons/search)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
