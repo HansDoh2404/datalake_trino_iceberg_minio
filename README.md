@@ -2,7 +2,7 @@
 
 <a id="readme-top"></a>
 
-[![Contributors][contributors-shield]][https://github.com/HansDoh2404]
+[![Contributors][contributors-shield]](https://github.com/HansDoh2404)
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
