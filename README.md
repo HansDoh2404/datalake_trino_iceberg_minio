@@ -25,6 +25,29 @@
 <!-- ABOUT THE PROJECT -->
 ## A propos du projet
 
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+  <a href="https://github.com/HansDoh2404/youtube_lakehouse_for_analytics">
+    <img src="images/architecture.png" alt="archi" width="800" height="800">
+  </a>
+
+  <h3 align="center">youtube_lakehouse_for_analytics</h3>
+
+  <!-- <p align="center">
+    An awesome README template to jumpstart your projects!
+    <br />
+    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
+    <br />
+    <br />
+    <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
+    &middot;
+    <a href="https://github.com/othneildrew/Best-README-Template/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
+    &middot;
+    <a href="https://github.com/othneildrew/Best-README-Template/issues/new?labels=enhancement&template=feature-request---.md">Request Feature</a>
+  </p> -->
+</div>
+
 Le projet mis en œuvre est un lakehouse. Son objectif est de faciliter le stockage, le traitement et l’analyse de données massives en suivant une approche ELT (Extract, Load, Transform). Cette architecture combine la scalabilité et la flexibilité de stockage d’un datalake avec les capacités de gestion et d’analyse traditionnelles d’un entrepôt de données (datawarehouse). Nous utilisons dans notre cas les données relatives aux vidéos Youtube de l'année 2025.
 
 
@@ -54,12 +77,12 @@ Outils à installer avant de débuter
 
 1. Cloner le repo
    ```sh
-   git clone https://github.com/HansDoh2404/datalake_trino_iceberg_minio.git
+   git clone https://github.com/HansDoh2404/youtube_lakehouse_for_analytics
    ```
 
 2. Se déplacer dans :
    ```sh
-   cd datalake_trino_iceberg_minio
+   cd youtube_lakehouse_for_analytics
    ```
 
 3. Après s'être assuré que docker-engine ou docker-desktop est lancé, exécuter :
@@ -90,6 +113,7 @@ Outils à installer avant de débuter
    );
    ```
 
+  <br />
   *Se rendre vers http://localhost:8080 pour voir le bucket minio créé* 
 
 5. Aller vers http://localhost:8083 pour exécuter le dag manuellement ou programmer son exécution via le code
@@ -98,7 +122,8 @@ Outils à installer avant de débuter
 ## Contact
 
 Contributeur : [@Hans Ariel](https://www.linkedin.com/in/hans-ariel-doh-59a31a2ba/) - hansearieldo@gmail.com
-Lien du projet: [https://github.com/HansDoh2404/datalake_trino_iceberg_minio](https://github.com/HansDoh2404/datalake_trino_iceberg_minio)
+<br />
+Lien du projet: https://github.com/HansDoh2404/youtube_lakehouse_for_analytics
 
 
 <!-- ACKNOWLEDGMENTS -->
