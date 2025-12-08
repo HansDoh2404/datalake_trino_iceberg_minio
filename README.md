@@ -48,7 +48,7 @@
   </p> -->
 </div>
 
-Le projet mis en œuvre est un lakehouse. Son objectif est de faciliter le stockage, le traitement et l’analyse de données massives en suivant une approche ELT (Extract, Load, Transform). Cette architecture combine la scalabilité et la flexibilité de stockage d’un datalake avec les capacités de gestion et d’analyse traditionnelles d’un entrepôt de données (datawarehouse). Nous utilisons dans notre cas les données relatives aux vidéos Youtube de l'année 2025.
+Le projet mis en œuvre est un lakehouse. Son objectif est de faciliter le stockage, le traitement et l’analyse de données massives en suivant une approche ELT (Extract, Load, Transform). Cette architecture combine la scalabilité et la flexibilité de stockage d’un datalake avec les capacités de gestion et d’analyse traditionnelles d’un entrepôt de données (datawarehouse). Nous utilisons dans notre cas les données relatives aux vidéos issues des meilleures chaines Youtube de l'année 2025.
 
 
 ## Stack technologique
@@ -113,8 +113,8 @@ Outils à installer avant de débuter
    );
    ```
 
-  <br />
   *Se rendre vers http://localhost:8080 pour voir le bucket minio créé* 
+
 
 5. Aller vers http://localhost:8083 pour exécuter le dag manuellement ou programmer son exécution via le code
 
@@ -131,6 +131,7 @@ Lien du projet: https://github.com/HansDoh2404/youtube_lakehouse_for_analytics
 
 * [Shields.io](https://shields.io/) : pour créer les badges dynamiquement
 * [Lucid App](https://lucid.app) : pour créer des diagrammes et architectures
+* [Youtube Top Channel Videos (2025)](https://www.kaggle.com/datasets/xtitanixx/youtube-videos?resource=download) : dataset utilisé
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
