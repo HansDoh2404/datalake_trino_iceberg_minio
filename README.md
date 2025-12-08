@@ -19,55 +19,16 @@
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
 [![LinkedIn][linkedin-shield]][linkedin-url]
-
-
-<!-- PROJECT LOGO -->
-<br />
-<div align="center">
-  <a href="https://github.com/HansDoh2404/datalake_trino_iceberg_minio">
-    <img src="images/architecture.png" alt="Logo" width="800" height="800">
-  </a>
-
-  <h3 align="center">Datalake - trino iceberg minio</h3>
-</div>
-
-
-
-<!-- TABLE OF CONTENTS -->
-<details>
-  <summary>Sommaire</summary>
-  <ol>
-    <li>
-      <a href="#about-the-project">A propos du projet</a>
-      <ul>
-        <li><a href="#built-with">Stack technologique</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
-  </ol>
-</details>
-
+[![Github][github-shield]][github-url]
 
 
 <!-- ABOUT THE PROJECT -->
 ## A propos du projet
 
-**Le projet implémenté, est un datalake dont l'objectif est de centraliser et faciliter le traitement de données massives en suivant une approche ELT** afin de produire des analyses futures, notamment l'exploration du passé, l'identification de tendances, et le support de la conformité et de la planification stratégique. L'histoire du datalake est liée à la volonté de dépasser les limites des data warehouses en permettant de stocker des données sans schéma prédéfini.
+Le projet mis en œuvre est un lakehouse. Son objectif est de faciliter le stockage, le traitement et l’analyse de données massives en suivant une approche ELT (Extract, Load, Transform). Cette architecture combine la scalabilité et la flexibilité de stockage d’un datalake avec les capacités de gestion et d’analyse traditionnelles d’un entrepôt de données (datawarehouse). Nous utilisons dans notre cas les données relatives aux vidéos Youtube de l'année 2025.
 
 
-### Stack technologique
+## Stack technologique
 
 Les différents outils technologiques utilisés pour son implémentation sont les suivants
 
@@ -77,77 +38,81 @@ Les différents outils technologiques utilisés pour son implémentation sont le
 * [![Minio][minio]][minio-url]
 * [![Airflow][airflow]][airflow-url]
 * [![Docker][docker]][docker-url]
-
+* [![Dbeaver][dbeaver]][dbeaver-url]
 
 
 <!-- GETTING STARTED -->
-## Lancdement du projet
+## Prérequis
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+Outils à installer avant de débuter
 
-### Pré-recquis
+- **Python** : https://www.python.org/downloads/ 
+- **Docker** : https://www.docker.com/get-started/
+- **Dbeaver** : via ubuntu software sur linux ou aller sur https://dbeaver.io/download/ 
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
+## Installation
 
-### Installation
-
-_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
-
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+1. Cloner le repo
    ```sh
-   git clone https://github.com/github_username/repo_name.git
-   ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
-5. Change git remote url to avoid accidental pushes to base project
-   ```sh
-   git remote set-url origin github_username/repo_name
-   git remote -v # confirm the changes
+   git clone https://github.com/HansDoh2404/datalake_trino_iceberg_minio.git
    ```
 
+2. Se déplacer dans :
+   ```sh
+   cd datalake_trino_iceberg_minio
+   ```
+
+3. Après s'être assuré que docker-engine ou docker-desktop est lancé, exécuter :
+   ```sh
+   docker compose up -d
+   ```
+
+4. Se rendre dans Dbeaver puis créer une connection avec trino, puis exécuter :
+   ```sh
+   -- Créer le schema
+   CREATE SCHEMA iceberg.test_schema
+   WITH (location = 's3://test/');
+
+   -- Créer une table
+   CREATE TABLE iceberg.test_schema.youtube_video (
+      video_id VARCHAR,
+      title VARCHAR,
+      channel_name VARCHAR,
+      channel_id VARCHAR, 
+      view_count INTEGER,
+      like_count INTEGER,
+      comment_count INTEGER,
+      published_date DATE,
+      thumbnail VARCHAR
+   ) WITH (
+        format = 'PARQUET',
+        location = 's3://test/youtube_video'
+   );
+   ```
+
+  *Se rendre vers http://localhost:8080 pour voir le bucket minio créé* 
+
+5. Aller vers http://localhost:8083 pour exécuter le dag manuellement ou programmer son exécution via le code
 
 <!-- CONTACT -->
 ## Contact
 
 Contributeur : [@Hans Ariel](https://www.linkedin.com/in/hans-ariel-doh-59a31a2ba/) - hansearieldo@gmail.com
-
 Lien du projet: [https://github.com/HansDoh2404/datalake_trino_iceberg_minio](https://github.com/HansDoh2404/datalake_trino_iceberg_minio)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 
 <!-- ACKNOWLEDGMENTS -->
 ## Utiles
 
-Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
-
-* [Choose an Open Source License](https://choosealicense.com)
-* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
-* [Malven's Flexbox Cheatsheet](https://flexbox.malven.co/)
-* [Malven's Grid Cheatsheet](https://grid.malven.co/)
-* [Img Shields](https://shields.io)
-* [GitHub Pages](https://pages.github.com)
-* [Font Awesome](https://fontawesome.com)
-* [React Icons](https://react-icons.github.io/react-icons/search)
-
+* [Shields.io](https://shields.io/) : pour créer les badges dynamiquement
+* [Lucid App](https://lucid.app) : pour créer des diagrammes et architectures
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+[linkedin-shield]: https://img.shields.io/badge/linkedin-%230072B1?style=for-the-badge&logo=LinkedIn
 [linkedin-url]: https://www.linkedin.com/in/hans-ariel-doh-59a31a2ba/
+[github-shield]: https://img.shields.io/badge/github-black?style=for-the-badge
+[github-url]: https://github.com/HansDoh2404
 [python]: https://img.shields.io/badge/Python-blue?style=for-the-badge&logo=python&logoColor=white
 [python-url]: https://docs.python.org/3/
 [nessie]: https://img.shields.io/badge/Nessie-green?style=for-the-badge&logo=nesie&logoColor=white
@@ -160,3 +125,5 @@ Use this space to list resources you find helpful and would like to give credit 
 [airflow-url]: https://airflow.apache.org/docs/
 [docker]: https://img.shields.io/badge/docker-%231D63ED?style=for-the-badge&logo=docker&logoColor=white
 [docker-url]: https://docs.docker.com/
+[dbeaver]: https://img.shields.io/badge/Dbeaver-%23BF8013?style=for-the-badge&logo=dbeaver
+[dbeaver-url]: https://dbeaver.io/download/
