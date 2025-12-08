@@ -111,11 +111,10 @@ api/__pycache__
 api/tmp
 
 tmp
-data
-data/
 secret.*
 secret/
 history.csv
 volumes/
 notebooks
 tests
+logs
